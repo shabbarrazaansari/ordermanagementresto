@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form onsubmit="savetocrudcrud(event)">
+        <label for="price">choose a price</label>
+        <input type="number" id="price" required name="price">
+        <label for="options">choose dish</label>
+        <select name="optionselection" id="options">
+            <option  >biryani</option>
+            <option  >dosha</option>
+            <option  >fried rice</option>
+        </select>
+        <label for="table">choose table</label>
+        <select name="tableselection" id="table">
+            <option value="1" >Table1</option>
+            <option value="2" >Table2</option>
+            <option value="3" >Table3</option>
+        </select>
+        <input type="submit" value="Add bill" onclick="refresh()">
+    </form>
+    <h1>orders</h1>
+    <h2>Table1</h2>
+    <ul id="table1"></ul>
+    <h2>Table2</h2>
+    <ul id="table2"></ul>
+    <h2>Table3</h2>
+    <ul id="table3"></ul>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.5.0/axios.min.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
